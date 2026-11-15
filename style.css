@@ -1,0 +1,147 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f3eb;
+    color: #493426;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 7%;
+    background: white;
+}
+
+header span, h1 span {
+    color: #b17c53;
+}
+
+nav a {
+    margin-left: 15px;
+    color: #493426;
+    text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 60px 7%;
+    background: #eee2d3;
+}
+
+.hero div, .hero img {
+    width: 50%;
+}
+
+.hero img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 45px;
+    margin: 15px 0;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 18px;
+    background: #65452f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section:not(.hero) {
+    padding: 55px 7%;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+article {
+    background: white;
+    padding-bottom: 15px;
+    transition: 0.3s;
+}
+
+article:hover {
+    transform: translateY(-5px);
+}
+
+article img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+article h3, article p {
+    margin: 12px;
+}
+
+.bar {
+    display: flex;
+    height: 25px;
+    margin: 10px 0 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.coffee { background: #65452f; }
+.milk { background: #bd9974; }
+.foam { background: #e8d9c5; }
+
+.legend {
+    color: #806c5b;
+    font-size: 13px;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+    background: #38291f;
+    color: white;
+}
+
+@media (max-width: 650px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero div, .hero img {
+        width: 100%;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coffee Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>coffee<span>.</span>guide</h2>
+    <nav>
+        <a href="#home">Головна</a>
+        <a href="#drinks">Напої</a>
+        <a href="#chart">Пропорції</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div>
+        <p>YOUR COFFEE GUIDE</p>
+        <h1>Світ великої <span>кави.</span></h1>
+        <p>Відкрий для себе різноманіття кавових напоїв.</p>
+        <a class="btn" href="#drinks">Дізнатись більше →</a>
+    </div>
+    <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800" alt="Кава">
+</section>
+
+<section id="drinks">
+    <h2>Популярні напої</h2>
+    <div class="cards">
+        <article>
+            <img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?w=500" alt="Еспресо">
+            <h3>Еспресо</h3>
+            <p>Міцна та насичена кава.</p>
+        </article>
+        <article>
+            <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?w=500" alt="Капучино">
+            <h3>Капучино</h3>
+            <p>Кава з молоком та піною.</p>
+        </article>
+        <article>
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=500" alt="Лате">
+            <h3>Лате</h3>
+            <p>Ніжний молочний напій.</p>
+        </article>
+        <article>
+            <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?w=500" alt="Флет вайт">
+            <h3>Флет вайт</h3>
+            <p>Міцна кава з тонкою піною.</p>
+        </article>
+    </div>
+</section>
+
+<section id="chart">
+    <h2>Склад кавових напоїв</h2>
+    <p>Еспресо — 100% кава</p>
+    <div class="bar"><div class="coffee" style="width:100%"></div></div>
+
+    <p>Капучино</p>
+    <div class="bar">
+        <div class="coffee" style="width:20%"></div>
+        <div class="milk" style="width:40%"></div>
+        <div class="foam" style="width:40%"></div>
+    </div>
+
+    <p>Лате</p>
+    <div class="bar">
+        <div class="coffee" style="width:12.5%"></div>
+        <div class="milk" style="width:75%"></div>
+        <div class="foam" style="width:12.5%"></div>
+    </div>
+    <p class="legend">Коричневий — кава | Бежевий — молоко | Світлий — піна</p>
+</section>
+
+<footer>coffee.guide ☕ | Твій путівник у світі кави</footer>
+
+</body>
+</html>
